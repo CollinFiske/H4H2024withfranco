@@ -12,8 +12,11 @@
         {% endfor %}
     </ul> -->
      <h2>Select a club:</h2>
-    <select id="clubDropdown">
-        {{ clubs_content|safe }}
+     <form></form>
+        {{ for club in clubs_content}}
+            <option>club</option>
+        {{ endfor }}
+
     </select>
 {% endblock %}
 
