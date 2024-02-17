@@ -3,27 +3,25 @@
  
 <head>
     <title>FlaskTest</title>
+    <link rel="stylesheet" href="style.css">
 </head>
  
 <body>
     <h2>SOURCE SCU</h2>
     <h4>Flask: Rendering Templates</h4>
- <!-- this section can be replaced by a child document -->  
+    
 {% block body %}
  
- 
-<form>
-    <label>Club1</label>
-    <br>
-    <label>Club2</label>
-    <br>
-    <label>Club3</label>
-    <br>
-    <button type="button" onclick="getValue()">Submit</button>
+<div class="dropdown">
+ <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+    <label id = "dropdown">Choose Club</label>
+    <select name="clubs">
+        <option value = "club1">Club 1</option>
+        <option value = "club2">Club 2</option>
 
-</form>
- 
- 
+    </select>
+  </div>
+
 {% endblock %}
  
  
