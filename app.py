@@ -2,14 +2,14 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-allClubs = []
+clubs = []
 
 
 @app.route('/')
 def index():
     # Read the content of clubs.html
     file_path=r"C:\Users\franc\OneDrive\Documentos\GitHub\H4H2024withfranco\templates\clubs.html"
-    
+
     with open(file_path, 'r') as file:
         clubs_content = file.read()
 
