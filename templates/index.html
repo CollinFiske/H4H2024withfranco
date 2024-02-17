@@ -10,11 +10,11 @@
     
      <h2>Select a club:</h2>
     <select id="clubDropdown">
-        {{ clubs_content|safe }}
-    </select>
-        <!-- {{ for club in clubs_content}}
+        {{ for club in allClubs}}
             <option>club</option>
-        {{ endfor }} -->
+        {{ endfor }}
+    </select>
+       
 
 {% endblock %}
 

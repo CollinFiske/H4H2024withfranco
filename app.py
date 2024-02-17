@@ -37,7 +37,7 @@ def index():
         #clubs_content = file.read()
 
     # Pass the content to the template for rendering
-    return render_template('index.html', clubs_content=allClubs)
+    return render_template('index.html', allClubs=allClubs)
 
 if __name__ == '__main__':
     app.run(debug=True)
