@@ -24,7 +24,6 @@ allClubs = ["ACM (Association for Computing Machinery)",
 "Association for Computing Machinery - Women's Chapter",
 "Banda Seleccion de Santa Clara",
 "Barkada of SCU",
-"AI"
 ]
 allClubs = sorted(allClubs)
 

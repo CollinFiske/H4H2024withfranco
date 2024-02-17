@@ -1,7 +1,9 @@
 body {
-    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: rgba(56, 140, 237, 0.662);
 }
 
-h1, p, select {
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, select {
     text-align: center;
 }
