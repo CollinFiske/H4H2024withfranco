@@ -2,10 +2,15 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
-@app.route("/")
+@app.route('/')
 def index():
-	return render_template("index.html")
+    # Sample data
+    name = "John"
+    age = 30
+    interests = ["Python", "Flask", "Jinja"]
 
-if __name__ == "__main__":
-	app.run()
+    # Render the template with data
+    return render_template('index.html', name=name, age=age, interests=interests)
+
+if __name__ == '__main__':
+    app.run(debug=True)
