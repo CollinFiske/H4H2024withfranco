@@ -6,7 +6,7 @@ window.onload = function() {
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         // Get the dropdown menu element
-        var dropdown = document.getElementById('clubs');
+        var dropdown = document.getElementById('clubDropdown');
         
         // Set the fetched content as the innerHTML of the dropdown
         dropdown.innerHTML = this.responseText;
@@ -14,6 +14,6 @@ window.onload = function() {
     };
   
     // Open the file and send the request
-    xhttp.open('GET', 'menu_options.html', true);
+    xhttp.open('GET', 'clubs.html', true);
     xhttp.send();
   }
