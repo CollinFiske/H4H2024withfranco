@@ -1,18 +1,19 @@
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+window.onload = function() {
+    // Create a new XMLHttpRequest object
+    var xhttp = new XMLHttpRequest();
   
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+    // Define the function to handle the response
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        // Get the dropdown menu element
+        var dropdown = document.getElementById('clubDropdown');
+        
+        // Set the fetched content as the innerHTML of the dropdown
+        dropdown.innerHTML = this.responseText;
       }
-    }
-  }
+    };
   
+    // Open the file and send the request
+    xhttp.open('GET', 'clubs.html', true);
+    xhttp.send();
+  }
