@@ -1,77 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+ 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <style>
-        /* You can add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>FlaskTest</title>
 </head>
+ 
 <body>
-    <header>
-        <h1>My Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Welcome to My Website</h2>
-        <p>This is a basic HTML template for a website. You can customize it to fit your needs.</p>
-    </section>
-    <footer>
-        &copy; 2024 My Website. All rights reserved.
-    </footer>
+    <h2>Welcome To GFG</h2>
+    <h4>Flask: Rendering Templates</h4>
+ <!-- this section can be replaced by a child document -->  
+{% block body %}
+ 
+ 
+<p>This is a Flask application.</p>
+ 
+ 
+{% endblock %}
+ 
+ 
 </body>
+ 
 </html>
