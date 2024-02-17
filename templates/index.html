@@ -10,9 +10,9 @@
     
      <h2>Select a club:</h2>
     <select id="clubDropdown">
-        {{ for club in allClubs}}
-            <option>club</option>
-        {{ endfor }}
+        {% for club in allClubs %}
+            <option value = "{{ club }}">{{ club }}</option>
+        {% endfor %}
     </select>
        
 
